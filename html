@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>HTML</title>
+    <meta charset="utf8">
+    <!--com o valor do atributo UTF8 meu documento aceita o maior
+    número de caracteres possiveis-->
+    <meta name="viewport" content="width=divice-wigth,initial-scale=1.0"> 
+    <!--configura uma página visível tanto para dispositivos móveis quanto em dispositivos
+    grandes. -->
+</head>
+
+<body>
+
+    <head>
+        <div style="background-color:green">
+           
+            <center><img src="imagens/html.jpeg" alt="figura html"></center>
+        </div>
+
+        <div>
+            <nav>
+                <h2 id="PREFACIO">Temas</h2>
+                <a href="#HTML">O que é HTML</a> - 
+                <a href="#COMENTARIO">Comentário no seu CODE</a> - 
+                <a href="#TAG">O que são TAGs</a> - 
+                <a href="#ATRIBUTOS">Atributos</a> - 
+                <a href="#BOLEANO">Atributo Boleano</a> - 
+                <a href="#GLOBAIS">Atributos Globais</a> - 
+                <a href="#ANINHADA">Aninhamento de TAGs</a> - 
+                <a href="#caracteresespeciais">Caracteres Especiais</a> - 
+                <a href="#VERSAOHTML">Doctype</a> - 
+                <a href="#ANATOMIA">Anatomia do Documento</a> - 
+            </nav>
+        </div>
+    </head>
+
+    <main>
+
+        <section>
+            <p>
+            <Fieldset>
+                <legend>HTML</legend><BR>
+                <details>
+                    <summary><strong id="HTML">HTML</strong> - é a linguagem de computador que estrutura todas as
+                        páginas da internet... <br></summary>
+                    O código HTML informa aos navegadores da web como exibir conteúdo como
+                    imagens, links e texto em uma página da web.
+                    <br>
+                    HTML significa <strong>HYPERTEXT MARKUP LANGUAGE</strong>.<br>
+                    HTML não é uma linguegem de programação em sí mas é uma linguagem
+                    do seu jeito de escrever, tem semnântica , tem sintaxe. Resumindo,
+                    é uma <strong>linguagem de marcação de texto</strong>.
+                </details>
+
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </Fieldset>
+            </p>
+        </section>
+
+        <section>
+            <P>
+            <fieldset>
+                <LEGend>COMENTÁRIOS NO CODE</LEGend><BR>
+                <details>
+                    <SUMMary>
+                        <strong id="COMENTARIO">COMENTÁRIO NO CODE</strong> - Podemos escrever comentários
+                        dentro da nossa linha de programação...
+                    </SUMMary> para que podemos identificar facilmente algum
+                    código específico e para que ela serve. Para isso colocamos "!-- --" entre
+                    as tags, fazendo isso ele não irá aparecer no seu Frontpage.<br>
+                    <FIeldset>
+                        <LEGENd>Estrutura para comentário:</LEGENd>
+                        <img src="imagens/comentario.jpg" alt="comentário documento">
+                        
+                    </FIeldset><br>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </P>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <legend>TAGs</legend><BR>
+                <details>
+                    <summary>
+                        <strong ID="TAG">O QUE SÃO TAGS</strong> - Os <strong>elementos HTML</strong> ou
+                        também chamados <strong>tags HTML</strong>...
+                    </summary>são utilizados para informar ao navegador
+                    que tipo de estrutura é essa que está sendo construída , podendo ser títulos ,
+                    parágrafos, imagens , links, entre outros.<br>
+                    As tags são formadas por uma estrutura própria, iniciam com um sinal "menor que" < , e em seguida
+                        vem o nome daquele elemento e por fim, o sinal "maior que">.<BR>
+                        Podem ser dispostas em tags que precisam de fechamento e tags que fecham sozinhas
+                        (self-closing). O fechamento de uma tag será definido com uma barra (/), sendo
+                        que no caso das tags de auto fechamento, não há necessidade da presença desse
+                        caractere.<BR>
+                        As tags podem ser categorizadas inicialmente em dois tipos, em “nível de
+                        bloco” (block-level) e “em linha” (inline). Um elemento em nível de bloco
+                        ocupa toda a largura de seu elemento pai, que também chamamos de elemento
+                        container, criando assim um “bloco”. Já os elementos inline, geralmente
+                        usamos para demarcação de conteúdos de texto. <br>
+                        <p>
+                        <ul style="background-color:green">
+                            Anatomia das Tags<br>
+                            <li>Abertura de tag</li>
+                            <li>Fechamento de tag</li>
+                            <li>Conteúdo</li>
+                            <li>Elementos</li>
+                        </ul>
+                        </p>
+                        <fieldset>
+                            <legend>Exemplo da Estrutura</legend>
+                            <img src="imagens/estrutura-tags.jpg" alt="Estrutura da tag">
+                        </fieldset><br>
+
+                        <fieldset>
+                            <legend>Resultado da estrutura</legend>
+                            <img src="imagens/resultado-tag.jpg" alt="Resultado da tag">
+                        </fieldset><br>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <LEGend>ATRIBUTOS HTML</LEGend><BR>
+                <details>
+                    <summary>
+                        <strong id="ATRIBUTOS">ATRIBUTOS HTML</strong> - são palavras especiais
+                        usadas dentro da tag de abertura...
+                    </summary>
+                    elas servem para controlar o comportamento do elemento. Os atributos HTML são um
+                    modificador de um tipo de elemento HTML. Com eles podemos identificar
+                    melhor um elemento, informar qual arquivo aquela tag deve utilizar,
+                    indicar o tipo de um campo de texto, etc…<br>
+
+                    Há dois tipos de atributos no HTML, os globais que são aceitos por todas as
+                    tags, como por exemplo: class, id, lang, style e algumas outras que você
+                    pode conferir na documentação, também existem os específicos que somente
+                    algumas tags possuem, como src, disabled, href, label, etc… <BR>
+                    A estrutura de um atribulo é <strong>(nome="valor")</strong><br>
+
+                    <p>
+                    <fieldset>
+                        <legend>Exemplo de alguns atributos:</legend>
+                       <img src="imagens/estrutura-atributo.jpg" alt="estrutura do atributo">
+                    </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Resultado do exemplo acima</legend>
+                            <img src="imagens/resultado-atributo.jpg" alt="resultado do atributo">
+                        </fieldset>
+                    </p>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <Fieldset>
+                <LEGend>ATRIBUTOS BOLEANOS</LEGend><BR>
+                <details>
+                    <summary>
+                        <strong id="BOLEANO">ATRIBUTO BOLEANO</strong> - Antes de entender os
+                        atributos booleanos em HTML é fundamental entender como funciona a lógica
+                        booleana.
+                    </summary>
+                    Dentro da lógica booleana pode-se classificar coisas ou fenômenos
+                    como verdadeiro ou falso.
+                    <br>Um exemplo:<br>
+
+                    Jonas Souza é do sexo masculino? Resposta: Verdadeiro<br>
+                    O número 8 é maior que o número 5? Resposta: Verdadeiro<br>
+                    O Brasil é um país localizado no hemisfério norte? Resposta: Falso<br>
+                    Perceba que todas essas perguntas só tem duas respostas possíveis: Sim ou
+                    não. <br><br>
+                    Desta forma, fazendo uma analogia, a lógica booleana seria como aquilo que
+                    a sabedoria popular chama de "8 ou 80" ou de "é ou não é".<br>
+
+                    Agora vamos ao contexto do HTML. Em HTML a presença de um atributo já é
+                    suficiente para que este seja considerado "true", assim como a sua ausencia
+                    significa que este atributo recebe o valor "false". O exemplo abaixo mostra
+                    como os atributos podem ser utilizados em HTML5:<br>
+                    <p>
+                    <fieldset>
+                        <legend>Exemplo atributo Boleano</legend>
+                        <img src="imagens/estrutura-boleano.jpg" alt="Estrutura Boleano">
+                    </fieldset>
+                    </p>
+                    <p>
+                        <fieldset>
+                            <legend>Resultado atributo Boleano</legend>
+                            <img src="imagens/resultado-boleano.jpg" alt="resultado Boleano">
+                        </fieldset>
+                    </p>
+                    - Perceba que o atributo "controls" aparece sem o comando de atribuição, isto
+                    é, a sua presença já indica que este atributo recebe o valor "true". Caso
+                    quisesse que este atributo recebesse o valor "false", bastaria retirá-lo
+                    de dentro da tag "audio". <br>
+                    - Perceba também o atributo boleano <strong>disabled<strong> dentro da
+                            tag input que cria uma caixa de entrada para o usuário, o disabled
+                            não funciona por estar desabilitada.
+
+                            Desta forma, sempre que você quiser que um atributo receba valor "true",
+                            basta coloca-lo na tag, quando quiser que seja "false" basta não declará-lo.<br>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </Fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <LEGend>ATRIBUTOS GLOBAIS</LEGend><BR>
+                <DETails>
+                    <summary>
+                        <strong id="GLOBAIS">Atributos Globais</strong> são atributos comuns a todos elementos HTML...
+                    </summary>
+                    eles podem ser usados em todos os elementos, embora os atributos não tenham
+                    efeito em alguns elementos. <BR>
+                    <H2>
+                        <center>Lista dos Atributos Globais</center>
+                    </H2>
+                    <ul>
+                        <li><strong>class</strong> -
+                            É uma lista separada por espaço das classes do elemento. as classes permitem ao CSS e ao
+                            JavaScript selecionar e acessar elementos específicos atraves dos seletores de classe ou
+                            funciona como um método Document.getElementsByClassName();<br>
+                            <p>
+                            <fieldset>
+                                <legend>Exemplo</legend>
+                                <img src="imagens/atributo-class.jpg" alt="atributo class">
+                            </fieldset>
+                            </p>
+                        </li>
+                        <br>
+                        <li><strong>contenteditable</strong> -
+                            É um atributo enumerado que indica se o elemento deve ser editado pelo
+                            usuário. Se assim for, o navegador modifica seu widget para permitir a
+                            edição. O atributo deve ter um dos seguintes valores:<br>
+                            <ul>
+                                <Li>
+                                    true ou uma string vazia, indica que o elemento deve ser editável;
+                                </Li>
+                                <li>
+                                    false, indica que o elemento não deve ser editável.<br>
+                                    <p>
+                                    <fieldset>
+                                        <legend>Exemplo</legend>
+                                        <img src="imagens/atributo-contenteditable.jpg" alt="">
+                                    </fieldset>
+                                    </p>
+                                </li>
+                                <br>
+                            </ul>
+                        <li>
+                            <strong>data-*</strong> -
+                            Forma uma classe de atributos, denominado de dados personalizados, que
+                            permite troca de informações proprietárias entre o HTML e a sua
+                            representação no DOM pode ser usada por scripts. Todos esses dados
+                            personalizados estão disponíveis através da interface do elemento
+                            HTMLElement em que o atributo está definido. A propriedade HTMLElement.
+                            dataset (en-US) dá acesso a eles.<br>
+                            <p>
+                            <fieldset style="background-color:yellow">
+                                <legend>Exemplo</legend><br>
+                                &lt;div data-qualquernome&gt; &lt;/div&gt;
+                            </fieldset>
+                            </p>
+                        </li>
+                        <br>
+                        <li>
+                            <strong>hidden</strong> -
+                            Um atributo booleano indica que o elemento ainda não é relevante ou
+                            não é mais relevante. Por exemplo, ele pode ser usado para ocultar
+                            elementos da página que não podem ser usados até que o processo de
+                            login tenha sido concluído. O navegador não renderizará esses elementos.
+                            Este atributo não deve ser usado para ocultar conteúdo que possa ser
+                            legível.<br>
+                            <p>
+                            <fieldset style="background-color:yellow">
+                                <legend>Exemplo</legend><br>
+                                &lt;div class="carrinho" hidden&gt; &lt;/div&gt;
+                            </fieldset>
+                            </p>
+                        </li><br>
+                        <li>
+                            <strong>id</strong> - Define um identificador exclusivo
+                            (ID) que deve ser único em todo o documento. Seu objetivo é
+                            identificar o elemento ao vincular (usando um identificador
+                            de fragmento), um script ou estilo (com CSS).<br>
+                            <p>
+                            <fieldset style="background-color:yellow">
+                                <legend>Exemplo</legend><br>
+                                &lt;div class="carrinho" id="name"&gt; &lt;/div&gt;
+                            </fieldset>
+                            </p>
+
+                        </li><br>
+                        <li>
+                            <strong>style</strong> - Contém regras de declarações CSS
+                            para aplicar no elemento. Note que é recomendado que as
+                            regras CSS fiquem num arquivo, ou vários arquivos, separado
+                            do HTML. Este atributo e o elemento &lt;style&gt; tem
+                            principalmente o propósito para rápida estilização do
+                            elemento, como por exemplo para testes.<br>
+                            <p>
+                            <fieldset style="background-color:yellow">
+                                <legend>Exemplo</legend><br>
+                                &lt;div id="name" Style="color: red"&gt; Conteudo &lt;/div&gt;
+                            </fieldset>
+                            </p>
+
+
+                        </li><br>
+                        <li>
+                            <strong>tabindex</strong> - É um atributo que recebe valores inteiros e
+                            indica se um elemento pode receber o foco de entrada de valores
+                            (é focável), se ele deve entrar na sequência da navegação pelo teclado
+                            (através da tecla TAB), e qual posição da sequência. Sobre seus valores:
+                            <br>
+                            <p>
+                            <fieldset style="background-color:yellow">
+                                &lt;div tabindex="1""&gt; Conteudo &lt;/div&gt;<br>
+                                &lt;div tabindex="2"&gt; Conteudo &lt;/div&gt;<br>
+                                &lt;div tabindex="3"&gt; Conteudo &lt;/div&gt;
+                            </fieldset>
+                            </p>
+
+                        </li>
+                        <br>
+                        <li>
+                            <strong>title</strong> -
+                            Contém um texto representativo sobre a informação relacionada ao
+                            elemento ao qual este atributo pertence. Tal informação pode, mas não
+                            necessariamente, ser apresentada através de um tooltip. Ele não
+                            faz nenhuma alteração no seu texto, mas é interessante pois quando o usuário
+                            deixa o mouse descansando emcima do elemento ele aparece o nome do titulo
+                            do elemento. <br>
+                            <P>
+                            <fieldset style="background-color:yellow">
+                                <legend>Exemplo</legend><br>
+                                &lt;div title="definir um titulo"&gt; Conteudo &lt;/div&gt;
+                            </fieldset>
+                            </P>
+                        </li>
+                    </ul><br>
+                </DETails>
+                <P>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </P>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <LEGend>TAGs ANINHADAS</LEGend><BR>
+                <details>
+                    <summary>
+                        <strong id="ANINHADA">TAGs ANINHADAS</strong> - são aquelas que estão
+                        misturadas, embaralhadas, uma dentro das outras...
+                    </summary>
+                    Mas nunca de forma aleatória. Podemos perceber no exemplo abaixo, que foi
+                    criada um parágrafo com a tag &lt;p&gt; e dentro dela inserimos uma outra
+                    tag &lt;em&gt; que dá enfase a uma palavra o texto. Uma situação
+                    muito inportante é que não podemos nunca esquecer de fechar todas as TAGs.<br>
+                    A hierarquia das tags também é muito importante, seguindo ainda nosso exemplo
+                    abaixo, a tag &lt;em&gt; &lt;/em&gt; é filha da tag &lt;p&gt; &lt;/p&gt;
+                    <p>
+                    <fieldset style="background-color:yellow">
+                        <legend>Exemplo</legend><br>
+                        &lt;p&gt; <br>
+                        Nós podemos &lt;em&gt;escrever&lt;/em&gt; algo aqui <br>
+                        &lt;/p&gt;<br>
+                    </fieldset>
+                    </p>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <legend>CARACTERES EPECIAIS</legend><br>
+                <details>
+                    <summary>
+                        <strong id="caracteresespeciais">Caracteres Especiais</strong> - Usamos
+                        os caractes especiais quando precisamos usar algo que seja da linha de
+                        programação...
+                    </summary> como (maior que), (menor que), (aspas aspas), etc.
+                    Esses elementos são chamados de caracteres reservados, pois são utilIzados
+                    nas linhas de programação. Para inicar a formatação de um caractere
+                    usamos o (E comercial = &amp;) e sempre terminamos com (ponto e virgula ;) <br>
+
+                    <p>
+                    <fieldset style="background-color:yellow">
+                        <legend>Exemplos de caracteres Especiais</legend><br>
+                        <ul>
+                            <li>&amp; - (E comercial) = E comercial + amp + ponto e virgula</li>
+                            <li>&lt; - (Menor que) = E comercial + lt + ponto e virgula</li>
+                            <li>&gt; - (Maior que) = E comercial + gt + ponto e virgula</li>
+                            <li>&nbsp; - (espaço) = E comercial + nbsp + ponto e virgula</li>
+                            <li>&quot; - (Aspas dupla) = E comercial + quot + ponto e virgula</li>
+                            <li>&apos; - (As simples) = E comercial + apos + ponto e virgula</li>
+                        </ul>
+                    </fieldset>
+                    </p>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <LEgend>DOCTYPE</LEgend><BR>
+                <details>
+                    <summary>
+                        <strong id="VERSAOHTML">DOCTYPE</strong> - O doctype informa ao navegador da Web qual a
+                        versão do HTML estamos usando...
+                    </summary>
+                    Sem ele, o navegador pode não exibir a página corretamente.<br>
+                    O doctype é um elemto de tag vazia (não precisa ser fechada).
+                    Como estamos usando a versão mais recente, usamos &lt;!doctype html&gt;<br>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+        <section>
+            <p>
+            <fieldset>
+                <legend>ANATOMIA DO DOCUMENTO</legend><BR>
+                <details>
+                    <summary>
+                        <strong id="ANATOMIA">ANATOMIA DO DOCUMENTO</strong> - configurando os elementos HTML...</summary> Agora que já conhecemos
+                    bastante sobre as tags, elementos, aninhamentos, atributos, etc.
+                    vamos saber como iniciamos nosso documento da Web. <br>
+                    <fieldset style="background-color:yellow">
+                        &lt;!DOCTYPE HTML&GT; - Informa ao navegador o html usado<BR>
+                        &nbsp;&nbsp;&nbsp; &LT;html&GT; - É o nosso ROOT
+                        (o inicio da cadeia) da programação, o pai das tags <BR>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LT;head&GT; - Cabeçalho da Página,
+                        dentro do HEAD vai informações inportante da Página<BR>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LT;title&GT;
+                        Título da nossa página &LT;/title&GT; -
+                        no TITLE colocamos o título que vai aparecer na aba do navegador<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &LT;meta&GT; - Tipo específico de elemento que vai representar
+                        vários tipos de metadados da nossa página. <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LT;/head&GT;<BR>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LT;body&GT; - Significa o corpo do
+                        documento, é onde vai toda nossa estrutura onde o usuario irá ver na página<BR>
+                        <p style="color:red">Aqui vai aparecer para o usuário tudo que eu digitar</p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &LT;/body&GT;<br>
+                        &lt;/html&gt;
+                    </fieldset>
+                </details>
+                <p>
+                    <button><a href="#PREFACIO"><strong>
+                                Voltar para o Prefácio </strong></a>
+                    </button>
+                </p>
+            </fieldset>
+            </p>
+        </section>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        <p>WebDesigner Marcelo Bertochi</p>
+        <p>Contato - - 13-997119601</p>
+    </footer>
+</body>
+
+</html>
